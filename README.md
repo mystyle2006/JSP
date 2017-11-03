@@ -37,3 +37,11 @@ public class HelloWorld extends HttpServlet {
   </servlet-mapping>
 </web-app>
 ~~~
+
+# 05_servlethelloworld
+this contains the following contents.
+* Sending data by using Form tag with POST method.
+* How to use Parameter function.
+* Encoding Korean.
+<hr />
+* post.html
