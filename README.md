@@ -11,5 +11,11 @@ this contains the following contents.
 * Encoding Korean.
 
 # 06_JSP
+* Scriptlet, Expression, Directive
 
 # 07_Session
+this contains the session example of creating login page.
+
+* How to create a session.
+* How to get a session.
+* How to delete a session.
