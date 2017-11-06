@@ -19,3 +19,8 @@ this contains the session example of creating login page.
 * How to create a session.
 * How to get a session.
 * How to delete a session.
+
+# 08_Exception
+this contains the exception example of redirecting to self-created error page.
+
+* How to redirect the page to error page by using web.xml and a page directive.
