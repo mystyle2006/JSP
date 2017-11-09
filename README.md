@@ -28,7 +28,7 @@ this contains the exception example of redirecting to self-created error page.
 # 09_userManagement
 This coutains the app of creating, delting, modifying a user
 
-* the concept of Connection Full is applied to this app. Please find the code below.
+* the concept of ***Connection Full*** is applied to this app. Please find the code below.
 
   **server -> context.xml through tomcat server**
 ~~~
