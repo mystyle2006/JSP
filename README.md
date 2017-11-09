@@ -27,3 +27,36 @@ this contains the exception example of redirecting to self-created error page.
 
 # 09_userManagement
 This coutains the app of creating, delting, modifying a user
+
+* the concept of Connection Full is applied to this app. Please find the code below.
+
+  **server -> context.xml through tomcat server**
+~~~
+  <Resource 
+    auth = "Container" 
+    drvierClassName = "oracle.jdbc.driver.OracleDriver" 
+    url = "jdbc:oracle:thin:@localhost:1521:xe" 
+    username = "scott"
+    password = "tiger" 
+    name = "jdbc/Oracle11g" 
+    type = "javax.sql.DataSource" maxActive = "50"
+    maxWait = "1000"
+  />
+~~~
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**userDAO.java**
+~~~
+  private Connection getConnection() {
+    Context context = null;
+    DataSource dataSource = null;
+    Connection con = null;
+    
+    try {
+      context = new InitialContext();
+      dataSource = (DataSource)context.lookup("java:comp/env/jdbc/Oracle11g");
+      con = dataSource.getConnection();
+    } catch (Exception e) {
+      System.out.println("Error at getConnection()");
+    }
+    return con;
+  }
+~~~
