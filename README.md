@@ -63,3 +63,6 @@ This coutains the app of creating, delting, modifying a user
 
 # 10_fileUpload
 This contains the app of uploading a file by using the library **cos.jar**
+
+# 11_MVCBoard
+This contains the app of creating/editing/deleting a board by using MVC Pattern
